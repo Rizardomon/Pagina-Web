@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.page-header {
+    display: flex;
+    background-color: #252323;
+}
+
+.header-logo {
+    padding: 15px;
+}
+
+.header-social {
+    padding: 15px;
+    position: absolute;
+    right: 10px;
+}
+
+.wifi-icon {
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.facebook-icon {
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.twitter-icon {
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.linkedin-icon {
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+}
