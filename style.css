@@ -37,3 +37,29 @@
     margin: 0px 10px 0px 10px;
     cursor: pointer;
 }
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+}
+
+.menu-search-bar {
+    margin-left: auto;
+}
+
+.input-search {
+    text-align: start;
+    padding: 8px;
+    width: 100%;
+    background-size: 20px;
+    border: 1px solid #b5b5b5;
+    border-radius: 2px;
+    font-size: small;
+    background: url(img/search-icon.png) no-repeat right;
+}
