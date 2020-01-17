@@ -45,7 +45,8 @@
 .menu-container {
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
+    border-bottom: solid #b5b5b5 2px;
 }
 
 .nav-items {
@@ -59,6 +60,7 @@
 
 .nav-items li:hover {
     border-bottom: #00bac6 solid 2px;
+    padding-bottom: 10px;
 }
 
 .nav-items a {
@@ -71,7 +73,6 @@
 }
 
 .nav-items a:hover {
-    padding-bottom: 20px;
     color: #00bac6;
 }
 
