@@ -163,6 +163,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .photo-container figure {
@@ -174,7 +175,13 @@
     border-radius: 2px;
 }
 
+.photo-container figure img:hover {
+    transform: scale(1.5);
+}
+
 .photo-container img {
+    border: solid #b5b5b5 1px;
+    transition: all .4s ease-in;
     max-width: 100%;
 }
 
