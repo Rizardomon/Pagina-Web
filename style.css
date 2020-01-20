@@ -176,3 +176,18 @@
     color: gray;
     font-size: small;
 }
+
+.tm-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.trademark {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 85px 0 85px;
+}
