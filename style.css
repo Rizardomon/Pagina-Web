@@ -49,7 +49,6 @@
 }
 
 .menu-container {
-    width: 100%;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -112,6 +111,12 @@
     align-items: center;
 }
 
+.main-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
 .main-text h1 {
     text-align: center;
     padding: 15px;
@@ -119,13 +124,15 @@
     font-weight: inherit;
     color: gray;
     text-transform: uppercase;
-    font-size: 17pt;
+    font-size: 2.15rem;
 }
 
 .main-text p {
     text-align: center;
     color: gray;
-    margin: 0px 250px 0px 250px;
+    font-size: 1rem;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .main-info {
@@ -141,16 +148,19 @@
     text-align: center;
     color: gray;
     font-weight: inherit;
-    font-size: 16pt;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
 }
 
 .main-info p {
     text-align: center;
     color: gray;
-    font-size: 11pt;
+    font-size: 1rem;
 }
 
 .main-info figure {
+    margin: 1.5%;
+    width: 100%;
     text-align: center;
 }
 
@@ -163,7 +173,7 @@
 }
 
 .pencil-icon {
-    margin-top: 80px;
+    margin-top: 25%;
 }
 
 .photo-container {
@@ -190,7 +200,7 @@
 
 .photo-container figure img:hover {
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 .photo-container img {
@@ -201,22 +211,20 @@
 
 .photo-container figcaption {
     color: gray;
-    font-size: small;
+    font-size: .8rem;
 }
 
 .tm-container {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
 .trademark {
     max-width: 100%;
-    width: 100%;
-    margin: 0 85px 0 85px;
     cursor: pointer;
 }
 
@@ -226,18 +234,18 @@ footer {
 
 .main-footer-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     background: url(img/footer-back.png);
 }
 
 .main-footer-container h1 {
-    font-size: 15pt;
+    font-size: 1.4rem;
     color: #ffffff;
     margin: 15px 0 15px 0;
 }
 
 .main-footer-container p {
-    font-size: 11pt;
+    font-size: .9rem;
     color: #c0c0c0;
     margin: 15px 0 15px 0;
 }
@@ -251,8 +259,8 @@ footer {
 }
 
 .main-footer-content {
-    margin: 0 80px 0 80px;
     width: 100%;
+    margin: 1% 5% 1% 5%;
 }
 
 .newsletter:hover {
@@ -266,7 +274,7 @@ footer {
 }
 
 .getin-img {
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 .end-footer-container {
