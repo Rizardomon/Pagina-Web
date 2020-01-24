@@ -101,8 +101,31 @@
     background: url(img/search-icon.png) no-repeat 95%;
 }
 
+.carrousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+}
+
 .banner {
     width: 100%;
+}
+
+.slick-prev {
+    left: 50px !important;
+    z-index: 203920323 !important;
+}
+
+.slick-next {
+    right: 50px !important;
+    z-index: 327473657 !important;
+}
+
+.slick-dots {
+    bottom: 20px !important;
 }
 
 .main-container {
