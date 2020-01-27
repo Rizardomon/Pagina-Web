@@ -153,6 +153,8 @@
 .main-text {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: auto;
 }
 
@@ -440,5 +442,26 @@ footer {
     }
     .show {
         display: flex;
+    }
+    .main-text {
+        width: 100%;
+        height: 40vh;
+    }
+    .main-text h1 {
+        font-size: 1.5rem;
+    }
+    .main-text p {
+        font-size: 1rem;
+    }
+    .tm-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .main-footer-container {
+        flex-wrap: wrap;
+    }
+    .end-footer-social {
+        display: none;
     }
 }
