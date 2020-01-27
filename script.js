@@ -76,7 +76,7 @@ specInfo = [{
 var modalInfo = document.getElementsByClassName('modal-info');
 
 function iniciaModal(modalID) {
-    const modalSpec = document.getElementById(modalID);
+    const modalSpec = document.getElementById('modal-info');
     for (let i = 0; i < modalInfo.length; i++) {
 
         modalSpec.classList.add('mostrar');
