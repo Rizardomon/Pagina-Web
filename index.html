@@ -84,21 +84,21 @@
         </div>
         <section class="main-container">
             <div class="main-info">
-                <figure>
+                <figure class="modal-info">
                     <img class="pc-icon" src="img/pc-icon.png" alt="A icon of a computer">
                     <figcaption>
                         <h1><strong>Lorem Ipsum</strong> is simply</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure class="modal-info">
                     <img class="pencil-icon" src="img/pencil-icon.png" alt="A icon of a pencil">
                     <figcaption>
-                        <h1><strong>Sign Up for newsletter</strong></h1>
-                        <p>Sign Up for our interesting newsletter</p>
+                        <h1><strong>Lorem Ipsum</strong> is simply</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure class="modal-info">
                     <img class="photo-icon" src="img/photo-icon.png" alt="A icon of a photo symbol">
                     <figcaption>
                         <h1><strong>Lorem Ipsum</strong> is simply</h1>
@@ -216,7 +216,35 @@
         </div>
     </footer>
 
+    <!-- Modal Specs -->
+    <div id="modal-info" class="modal-spec-container">
+        <div class="modal-spec">
+            <button id="bt_modal1" class="bt_modal1">X</button>
+            <div class="modal-img-conteiner">
+                <img id="spec-img" class="modal-spec-img" src="img/pc-icon.png">
+            </div>
+            <div class="modal-info">
+                <h1 id="modal-tittle" class="modal-tittle"><strong>Lorem Ipsum</strong> is simply</h1>
+                <p id="modal-text" class="modal-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal Newsletter -->
+    <div class="modal-new-container">
+        <div class="modal-newsletter">
+            <button id="bt_modal2" class="bt_modal2">X</button>
+            <form>
+                <legend>Sign up for newsletter</legend>
+                <p><label for="cNome">Name: </label>
+                    <input type="text" class="form-name" size="20" maxlength="30" placeholder="Full Name"></p>
+                <p><label for="cEmail">E-mail: </label>
+                    <input type="email" name="tEmail" id="cEmail" size="20" maxlength="40" placeholder="example@example.com"></p>
+                <input type="button" value="Submit">
+            </form>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>

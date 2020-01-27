@@ -4,6 +4,9 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+
+/* Header Style */
+
 #header {
     width: 100%;
 }
@@ -116,6 +119,9 @@
     font-size: small;
     background: url(img/search-icon.png) no-repeat 95%;
 }
+
+
+/* Main Style */
 
 .carrousel {
     overflow: hidden;
@@ -269,6 +275,9 @@
     cursor: pointer;
 }
 
+
+/* Footer Style */
+
 footer {
     width: 100%;
 }
@@ -333,6 +342,43 @@ footer {
 
 .end-footer-social {
     margin: auto;
+}
+
+
+/* Modal Spec Style */
+
+.modal-spec-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-spec-container.mostrar {
+    display: flex;
+}
+
+.modal-spec {
+    background: white;
+    width: 60%;
+    height: auto;
+    min-width: 300px;
+    padding: 40px;
+    position: relative;
+    display: flex;
+}
+
+
+/* Modal Newsletter Style */
+
+.modal-new-container {
+    display: none;
 }
 
 @media (min-width: 320px) and (max-width: 500px) {

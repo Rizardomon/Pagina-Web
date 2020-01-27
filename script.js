@@ -50,3 +50,50 @@ window.onclick = function(event) {
     }
 }
 */
+
+//Objetos Modal Spec
+specInfo = [{
+        'id': 0,
+        'img': 'pc-icon.png',
+        'tittle': 'PC ICON MODAL',
+        'text': 'PC ICON MODAL GENERIC TEXT',
+    },
+    {
+        'id': 1,
+        'img': 'pencil-icon.png',
+        'tittle': 'PENCIL ICON MODAL',
+        'text': 'PENCIL ICON MODAL GENERIC TEXT',
+    },
+    {
+        'id': 2,
+        'img': 'photo-icon.png',
+        'tittle': 'PHOTO ICON MODAL',
+        'text': 'PHOTO ICON MODAL GENERIC TEXT',
+    }
+]
+
+//Abrir e fechar o modal do main
+var modalInfo = document.getElementsByClassName('modal-info');
+
+function iniciaModal(modalID) {
+    const modalSpec = document.getElementById(modalID);
+    for (let i = 0; i < modalInfo.length; i++) {
+
+        modalSpec.classList.add('mostrar');
+
+        document.getElementById('spec-img').src = 'img/' + specInfo[i].img;
+        document.getElementById('modal-tittle').innerHTML = specInfo[i].tittle;
+        document.getElementById('modal-text').innerHTML = specInfo[i].text;
+
+        modalSpec.addEventListener('click', (e) => {
+            if (e.target.id == modalID || e.target.className == 'bt_modal1') {
+                modalSpec.classList.remove('mostrar');
+            }
+        })
+
+    }
+}
+
+for (let i = 0; i < modalInfo.length; i++) {
+    modalInfo[i].addEventListener('click', () => iniciaModal('modal-info'));
+}
