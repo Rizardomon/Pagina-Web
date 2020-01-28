@@ -34,22 +34,44 @@ function showMenuFunction() {
     document.getElementById("menu-mobile-content").classList.toggle("show");
 }
 
-
-/*
-//Fecha o menu se clicar fora dele
-window.onclick = function(event) {
-    if (!event.target.matches('.check')) {
-        var dropdowns = document.getElementsByClassName("menu-mobile-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
+//Modal Light Box
+//Open the modal
+function openModal() {
+    document.getElementById('myModal').style.display = "flex";
 }
-*/
+
+//Close the modal
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+//Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName('mySlides');
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slides[slideIndex - 1].style.display = 'block';
+}
 
 //Objetos Modal Spec
 specInfo = [{
@@ -78,20 +100,21 @@ var modalInfo = document.getElementsByClassName('modal-info');
 function iniciaModal(modalID) {
     const modalSpec = document.getElementById('modal-info-container');
     for (let i = 0; i < modalInfo.length; i++) {
-
         modalSpec.classList.add('mostrar');
-
-        document.getElementById('spec-img').src = 'img/' + specInfo[i].img;
-        document.getElementById('modal-tittle').innerHTML = specInfo[i].tittle;
-        document.getElementById('modal-text').innerHTML = specInfo[i].text;
+        showInfos(i);
 
         modalSpec.addEventListener('click', (e) => {
             if (e.target.id == modalID || e.target.className == 'bt_modal1') {
                 modalSpec.classList.remove('mostrar');
             }
         })
-
     }
+}
+
+function showInfos(id) {
+    document.getElementById('spec-img').src = 'img/' + specInfo[id].img;
+    document.getElementById('modal-tittle').innerHTML = specInfo[id].tittle;
+    document.getElementById('modal-text').innerHTML = specInfo[id].text;
 }
 
 for (let i = 0; i < modalInfo.length; i++) {
