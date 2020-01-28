@@ -84,21 +84,21 @@
         </div>
         <section class="main-container">
             <div class="main-info">
-                <figure class="modal-info">
+                <figure class="modal-info" id="modal1">
                     <img class="pc-icon" src="img/pc-icon.png" alt="A icon of a computer">
                     <figcaption>
                         <h1><strong>Lorem Ipsum</strong> is simply</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
                     </figcaption>
                 </figure>
-                <figure class="modal-info">
+                <figure class="modal-info" id="modal2">
                     <img class="pencil-icon" src="img/pencil-icon.png" alt="A icon of a pencil">
                     <figcaption>
                         <h1><strong>Lorem Ipsum</strong> is simply</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
                     </figcaption>
                 </figure>
-                <figure class="modal-info">
+                <figure class="modal-info" id="modal3">
                     <img class="photo-icon" src="img/photo-icon.png" alt="A icon of a photo symbol">
                     <figcaption>
                         <h1><strong>Lorem Ipsum</strong> is simply</h1>
@@ -108,42 +108,42 @@
             </div>
             <div class="photo-container">
                 <figure class="car-container">
-                    <img class="car-img" src="img/car-img.jpg" alt="A car image">
+                    <img class="car-img" src="img/car-img.jpg" alt="A car image" onclick="openModal(), currentSlide(1)">
                     <figcaption class="car-desc">
                         <strong>Lorem Ipsum</strong>
                         <p>Lorem Ipsum is simply dummy text of the</p>
                     </figcaption>
                 </figure>
                 <figure class="grass-container">
-                    <img class="grass-img" src="img/grass-img.jpg" alt="A grass image">
+                    <img class="grass-img" src="img/grass-img.jpg" alt="A grass image" onclick="openModal(),currentSlide(2)">
                     <figcaption class="grass-desc">
                         <strong>Lorem Ipsum</strong>
                         <p>Lorem Ipsum is simply dummy text of the</p>
                     </figcaption>
                 </figure>
                 <figure class="grass2-container">
-                    <img class="grass2-img" src="img/grass2-img.jpg" alt="A grass image">
+                    <img class="grass2-img" src="img/grass2-img.jpg" alt="A grass image" onclick="openModal(),currentSlide(3)">
                     <figcaption class="grass2-desc">
                         <strong>Lorem Ipsum</strong>
                         <p>Lorem Ipsum is simply dummy text of the</p>
                     </figcaption>
                 </figure>
                 <figure class="coffee-container">
-                    <img class="coffee-img" src="img/coffee-img.jpg" alt="A coffee image">
+                    <img class="coffee-img" src="img/coffee-img.jpg" alt="A coffee image" onclick="openModal(),currentSlide(4)">
                     <figcaption class="coffee-desc">
                         <strong>Lorem Ipsum</strong>
                         <p>Lorem Ipsum is simply dummy text of the</p>
                     </figcaption>
                 </figure>
                 <figure class="grass3-container">
-                    <img class="grass3-img" src="img/grass3-img.jpg" alt="A grass image">
+                    <img class="grass3-img" src="img/grass3-img.jpg" alt="A grass image" onclick="openModal(), currentSlide(5)">
                     <figcaption class="grass3-desc">
                         <strong>Lorem Ipsum</strong>
                         <p>Lorem Ipsum is simply dummy text of the</p>
                     </figcaption>
                 </figure>
                 <figure class="fruit-container">
-                    <img class="fruit-img" src="img/fruit-img.jpg" alt="A fruit image">
+                    <img class="fruit-img" src="img/fruit-img.jpg" alt="A fruit image" onclick="openModal(), currentSlide(6)">
                     <figcaption class="fruit-desc">
                         <strong>Lorem Ipsum</strong>
                         <p>Lorem Ipsum is simply dummy text of the</p>
@@ -217,7 +217,7 @@
     </footer>
 
     <!-- Modal Specs -->
-    <div id="modal-info" class="modal-spec-container">
+    <div id="modal-info-container" class="modal-spec-container">
         <div class="modal-spec">
             <button id="bt_modal1" class="bt_modal1">X</button>
             <div class="modal-img-conteiner">
@@ -230,20 +230,47 @@
         </div>
     </div>
 
-    <!-- Modal Newsletter -->
-    <div class="modal-new-container">
-        <div class="modal-newsletter">
-            <button id="bt_modal2" class="bt_modal2">X</button>
-            <form>
-                <legend>Sign up for newsletter</legend>
-                <p><label for="cNome">Name: </label>
-                    <input type="text" class="form-name" size="20" maxlength="30" placeholder="Full Name"></p>
-                <p><label for="cEmail">E-mail: </label>
-                    <input type="email" name="tEmail" id="cEmail" size="20" maxlength="40" placeholder="example@example.com"></p>
-                <input type="button" value="Submit">
-            </form>
+    <!-- Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="img/car-img.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="img/grass-img.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="img/grass2-img.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="img/coffee-img.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="img/grass3-img.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="img/fruit-img.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/Previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
         </div>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
