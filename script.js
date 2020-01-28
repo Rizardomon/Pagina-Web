@@ -76,7 +76,7 @@ specInfo = [{
 var modalInfo = document.getElementsByClassName('modal-info');
 
 function iniciaModal(modalID) {
-    const modalSpec = document.getElementById('modal-info');
+    const modalSpec = document.getElementById('modal-info-container');
     for (let i = 0; i < modalInfo.length; i++) {
 
         modalSpec.classList.add('mostrar');
@@ -95,5 +95,5 @@ function iniciaModal(modalID) {
 }
 
 for (let i = 0; i < modalInfo.length; i++) {
-    modalInfo[i].addEventListener('click', () => iniciaModal('modal-info'));
+    modalInfo[i].addEventListener('click', () => iniciaModal('modal-info-container'));
 }
