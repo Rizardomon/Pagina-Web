@@ -95,13 +95,12 @@ specInfo = [{
 ]
 
 //Abrir e fechar o modal do main
-var modalInfo = document.getElementsByClassName('modal-info');
+var modalInfo = document.getElementsByClassName('info-img');
 
 function iniciaModal(modalID) {
     const modalSpec = document.getElementById('modal-info-container');
     for (let i = 0; i < modalInfo.length; i++) {
         modalSpec.classList.add('mostrar');
-        showInfos(i);
 
         modalSpec.addEventListener('click', (e) => {
             if (e.target.id == modalID || e.target.className == 'bt_modal1') {
