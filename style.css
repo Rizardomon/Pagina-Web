@@ -70,12 +70,9 @@
 .menu-container {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     padding: 10px;
     border-bottom: solid #b5b5b5 2px;
-}
-
-.nav-menu {
-    margin: auto;
 }
 
 .nav-items {
@@ -105,10 +102,6 @@
     color: #00bac6;
 }
 
-.menu-search-bar {
-    margin: auto;
-}
-
 .input-search {
     text-align: start;
     padding: 8px;
@@ -118,6 +111,12 @@
     border-radius: 2px;
     font-size: small;
     background: url(img/search-icon.png) no-repeat 95%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.input-search:focus {
+    width: 200%;
 }
 
 
@@ -134,6 +133,7 @@
 
 .banner {
     width: 100%;
+    height: auto;
 }
 
 .slick-prev {
@@ -211,12 +211,9 @@
     text-align: center;
 }
 
-.main-info figure:hover {
-    cursor: pointer;
-}
-
 .main-info img:hover {
     opacity: 0.6;
+    cursor: pointer;
 }
 
 #pencil-icon {
